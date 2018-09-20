@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "10"
+dist: trusty
+install:
+  - echo -e "Hello, World!"
+script:
+  - chmod +x ./checker.sh
+  - ./checker.sh 101.110.118 101.96.10 101.96.9 101.96.8
+  - cat /deploy/ip.list
